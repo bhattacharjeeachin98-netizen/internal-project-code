@@ -31,21 +31,21 @@ int main()
     printf("Enter attendance threshold: ");
     scanf("%f", &threshold);
 
-    /* Assume first student has the lowest attendance */
+   
     lowest = attendance[0];
 
     for (i = 0; i < n; i++)
     {
-        /* Count students below threshold */
+       
         if (attendance[i] < threshold)
         {
             belowThreshold++;
         }
 
-        /* Calculate total */
+       
         sum = sum + attendance[i];
 
-        /* Find lowest attendance */
+     
         if (attendance[i] < lowest)
         {
             lowest = attendance[i];
